@@ -2,7 +2,7 @@ Vue-Router
 
 vue-router中hash模式和history模式有什么区别？  
 - hash模式最显著的特征就是会地址中会有#号，#后面的值就是hash值，hash虽然出现在url中，
-但是不影响http请求，只有hash前面的基地址会包含在请求中，因此hash改变不会重新加载页面。
+但实际上只是用hash模拟了完整的url，不影响http请求，只有hash前面的基地址会包含在请求中，因此hash改变不会重新加载页面。
 - history则是利用了H5的History Interface新增方法pushState和replaceState。
   
     history.pushState(data, title [, url])：往历史记录堆栈顶部添加一条记录； data会在onpopstate事件触发时作为
