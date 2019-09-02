@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb8df0a5-c412-4a55-83d2-28a177b44992" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/issues/20190903_Vue.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/issues/20190902_Array.md" beforeDir="false" afterPath="$PROJECT_DIR$/issues/20190902_Array.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,47 +28,47 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="LICENSE" value="1" />
-          <entry key="md" value="17" />
+          <entry key="md" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Markdown" value="16" />
+          <entry key="Markdown" value="18" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="md" value="1893" />
+          <entry key="md" value="1979" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Markdown" value="1893" />
+          <entry key="Markdown" value="1979" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/issues/20190830_Vue-Router.md">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/issues/20190903_Vue.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="1585">
-                <caret line="185" column="39" selection-start-line="185" selection-start-column="39" selection-end-line="185" selection-end-column="39" />
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="170">
+                <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/issues/20190902_Array.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="204">
-                <caret line="12" column="60" lean-forward="true" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="378">
+                <caret line="98" column="21" selection-start-line="98" selection-start-column="21" selection-end-line="98" selection-end-column="21" />
               </first_editor>
               <second_editor />
             </state>
@@ -92,6 +92,7 @@
         <option value="$PROJECT_DIR$/issues/20190830.md" />
         <option value="$PROJECT_DIR$/issues/20190830_Vue-Router.md" />
         <option value="$PROJECT_DIR$/issues/20190902_Array.md" />
+        <option value="$PROJECT_DIR$/issues/20190903_Vue.md" />
       </list>
     </option>
   </component>
@@ -102,7 +103,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="592" />
+    <option name="x" value="851" />
+    <option name="y" value="13" />
     <option name="width" value="1599" />
     <option name="height" value="1047" />
   </component>
@@ -165,18 +167,18 @@
       <workItem from="1567073586548" duration="532000" />
       <workItem from="1567074216052" duration="437000" />
       <workItem from="1567074802109" duration="16017000" />
-      <workItem from="1567388774969" duration="4066000" />
+      <workItem from="1567388774969" duration="6527000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21052000" />
+    <option name="totallyTimeSpent" value="23513000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="592" y="0" width="1599" height="1047" extended-state="0" />
+    <frame x="851" y="13" width="1599" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989035" visible="true" weight="0.16015375" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989035" visible="true" weight="0.16015375" />
       <window_info id="Structure" order="1" sideWeight="0.5010965" side_tool="true" weight="0.15089513" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -190,7 +192,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32998884" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.41216215" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.41216215" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -238,9 +240,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/issues/20190902_Array.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="378">
+            <caret line="98" column="21" selection-start-line="98" selection-start-column="21" selection-end-line="98" selection-end-column="21" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/issues/20190903_Vue.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="204">
-            <caret line="12" column="60" lean-forward="true" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
+          <first_editor relative-caret-position="170">
+            <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
           </first_editor>
           <second_editor />
         </state>
