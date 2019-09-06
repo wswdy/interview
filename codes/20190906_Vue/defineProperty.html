@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>
+        <input id="name" name="name" value="" />
+        <p id="showName" style="background: forestgreen; color: white;"></p>
+    </div>
+</body>
+<script>
+    const person = {
+        name: '',
+        age: '',
+    };
+    // Object.defineProperty(person, 'name', {
+    //     get: function() {
+    //         return document.getElementById('name').value;
+    //     },
+    //     set: function(newValue) {
+    //         document.getElementById('name').value = newValue;
+    //         document.getElementById('showName').innerHtml = newValue;
+    //     }
+    // });
+    // document.addEventListener('input', (e)=>{
+    //     person.name = e.target.value;
+    // });
+    // console.log(111, person);
+
+
+    // function defineReactive(obj, key, val) {
+    //     Object.defineProperty(obj, key, {
+    //         enumerable: true, /* 属性可枚举 */
+    //         configurable: true, /* 属性可被修改或删除 */
+    //         get: function reactiveGetter() {
+    //             return val;
+    //         },
+    //         set: function reactiveSetter(newVal) {
+    //             if (newVal !== val) {
+    //                 console.log(key + '更新为：' + newVal);
+    //                 return val = newVal;
+    //             }
+    //         }
+    //     })
+    // }
+    // defineReactive(person, 'name');
+    // person.name = 'dayong';
+    // console.log(222, person);
+
+    function observer(obj) {
+        if (!obj || (typeof obj !== 'object')) {
+            return;
+        }
+        Object.keys(obj).forEach((key) => {
+            defineReactive(obj, key, obj[key]);
+        });
+    }
+    observer(person);
+    person.name = 'dayong';
+    person.age = '26';
+    console.log(333, person);
+
+    class Vue {
+        constructor(options) {
+            this.data = options.data;
+            // 调用上面observer,劫持每个对象属性
+            observer(this.data);
+        }
+    }
+    // 实例化
+    const myVue = new Vue({
+        data: {
+            introduce: 'i am dayong'
+        }
+    });
+    console.log(myVue.data.introduce);
+    myVue.data.introduce = 'dayong is coming';
+
+
+    // 定义一个全局的对象来收集依赖
+    const dependObj = {
+        deps: [],
+        addDep: function(dep) {
+            this.deps.push(dep);
+        },
+        notify: function(value) {
+            this.deps.forEach(dep => {
+                // 通知更新
+                console.log('更新新数据：', value)
+            });
+        }
+    };
+    function defineReactive(obj, key, val) {
+        dependObj.deps = [];
+        Object.defineProperty(obj, key, {
+            enumerable: true, /* 属性可枚举 */
+            configurable: true, /* 属性可被修改或删除 */
+            get: function reactiveGetter() {
+                // dependObj.deps.push(this);
+                dependObj.addDep(this);
+                return val;
+            },
+            set: function reactiveSetter(newVal) {
+                // 这里写法和之前稍有不同，但大同小异
+                if (newVal === val) return;
+                // console.log(key + '更新为：' + newVal);
+                dependObj.notify(newVal);
+                return val = newVal;
+            }
+        })
+    }
+
+</script>
+</html>
