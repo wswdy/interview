@@ -1,0 +1,10 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Your template template
+# Editor directories and files
+.idea
+.vscode
+.project
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
