@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+/**/
+    // (function f() {
+    //     console.log(11111)
+    // })();
+/**/
+    // var count = 0;
+    // function foo(count) {
+    //     count += 1;
+    //     console.log(count)
+    // }
+    // console.log(111, count);
+    // foo(count);
+    // foo(count);
+    // console.log(333, count);
+/**/
+    for (var i = 0; i < 5; i++) {
+        setTimeout(function() {
+            console.log(i);
+        }, 1000);
+    } // 打印5个5
+
+    for (var i = 0; i < 5; i++) {
+        setTimeout((function(i) {
+            return function () {
+                console.log(i);
+            }
+        })(i), 1000);
+    } // 0 1 2 3 4
+</script>
+</html>
